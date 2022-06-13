@@ -1,0 +1,14 @@
+.menu {
+    margin-bottom: 2em;
+    margin-top: 3vw;
+}
+
+.menu a {
+    margin-right: 3vw;
+}
+
+.content, .menu {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}

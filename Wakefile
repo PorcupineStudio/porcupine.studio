@@ -1,0 +1,25 @@
+dev: netlify dev
+build: netlify build
+integrate: echo "Integrate task not implemented"
+test: npm run typecheck
+
+new: |
+  cat ./content-templates/article.template.md
+    | sed s/{slug}/$1/g
+    > ./src/pages/$1.md
+
+publish: |
+  sed -i s/^publish_date:$/"publish_date: $(date -I)"/ ./src/pages/$1.md
+  && sed -i s/"draft: true"/"draft: false"/ ./src/pages/$1.md
+
+unpublish: |
+  sed -i s/^publish_date:.*$/"publish_date:"/ ./src/pages/$1.md
+  && sed -i s/"^draft:.*$"/"draft: true"/ ./src/pages/$1.md
+
+drafts: |
+  grep -lrx "^draft: true$" ./src/pages/*.md
+
+published: |
+  grep -lrx "^draft: false$" ./src/pages/*.md
+
+types: ls -1 ./content-templates/*.template.md

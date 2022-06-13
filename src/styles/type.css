@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #23272A;
+    background-color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: calc(2em + 1.5vw);
+}
+
+h2 {
+    font-size: calc(0.5em + 1.25vw);
+}
+
+h3 {
+    font-size: calc(0.5em + 1vw);
+}
+
+em {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.porcupine .n {
+    position: relative;
+    left: 0.7vw;
+}
+
+.porcupine .u {
+    position: relative;
+    left: 1.6vw;
+}
+
+.porcupine {
+    margin-top: -4vw;
+    margin-bottom: 0;
+    font-size: 25vw;
+    letter-spacing: -3.9vw;
+}
+
+.studio {
+    margin-top: -7vw;
+    margin-bottom: 0;
+    margin-left: 0.6vw;
+    font-size: 15vw;
+    letter-spacing: -2vw;
+    margin-bottom: 5vw;
+}
+
+.menu a {
+    font-size: max(1.3em, 3vw);
+    font-weight: 300;
+}
+
+footer {
+    border-top: 1em solid #23272A;
+    margin-top: 3em;
+    vertical-align: text-top;
+}
+
+li {
+    list-style-type: square;
+}
+
+code {
+    font-family: monospace;
+}
+

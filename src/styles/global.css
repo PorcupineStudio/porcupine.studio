@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    color: #23272A;
+}
+
+a:link {
+    color: #23272A;
+}
+
+a:active {
+    color: #23272A;
+}
+
+a:hover {
+    color: #23272A;
+}
+
+div a:hover, h1 a:hover, li a:hover, p a:hover {
+    color: #23272A;
+}
+
+a:visited {
+    color: #23272A;
+}
+
+footer {
+    padding-bottom: 5vw;
+    margin-bottom: -1em;
+}
